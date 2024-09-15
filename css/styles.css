@@ -1,0 +1,296 @@
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+  background: url('../images/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+h1, 
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+
+
+/* =============================
+
+    HEADER STYLES
+
+=============================*/
+
+
+.cover {
+    background: url('../images/wedding-landing-cover.png') no-repeat top center/cover;
+    display: table;
+    text-align: center;
+    height: 90vh;
+    width: 100%;
+  }
+  
+  /* @media (min-width: 768px) {
+
+    .cover {
+      background: url('../images/wedding-landing-cover.png') no-repeat top center/cover;
+    }
+  
+  } */
+ 
+
+.hero-text-wrapper {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
+  height: 100%; /* assume parent has a defined height */
+}
+
+.hero-text {
+    margin: 0 auto;
+    padding: .625rem;
+    color: hsla(0,0%,100%,.9);
+    background: hsla(100,0%,0%,.5);
+    
+  }
+  
+
+  .hero-text h1 {
+    font-size: 3.15rem;
+    color: #d2ba87;
+     margin-bottom: 0;
+  }
+  
+
+  @media (min-width: 768px) {
+
+    .hero-text {
+      padding: 1 rem;
+      border-radius: 4px;
+      width: 40%;
+    }
+  
+    .hero-text h1 {
+      font-size: 7rem;
+    }
+  
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+  }
+
+
+  @media (min-width: 768px) {
+
+    .tagline {
+      text-transform: uppercase;
+    }
+  
+  } 
+  .tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+  }
+
+  .date {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    vertical-align: middle;
+  }
+  
+  .date::before,
+  .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+  }
+
+
+  /* =============================
+
+      LOCATIONS STYLES
+
+=============================*/
+
+.loc img {
+  height: 7.5rem;
+}
+
+.loc h3 {
+  font-weight: 700;
+}
+
+.loc div {
+  font-family: 'Muli', sans-serif;
+}
+
+/* Default styling for larger screens (inline layout) */
+.loc {
+  display: inline-block;
+  width: 25%; /* Or adjust to fit your layout */
+  padding: 1.5rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.loc::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+
+/* Mobile view (vertical block layout) */
+@media (max-width: 768px) {
+  .loc {
+    display: block;
+    width: 100%; /* Take full width for each location */
+    padding: 1.5rem 0;
+    margin: 0.5rem 0;
+  }
+  .loc::after {
+    display: none;
+  }
+}
+
+/* =============================
+
+        PROGRAM STYLES
+
+=============================*/
+
+.program {
+  width: 100%;
+  text-align: left;
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+;
+}
+
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.program p {
+  font-style: italic; 
+  margin-left: 20%
+}
+
+.program ul {
+  letter-spacing: .025rem;
+  margin-left: 20%
+}
+
+@media (min-width: 768px) {
+
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+
+}
+
+/* =============================
+
+        GIFTS STYLES
+
+=============================*/
+
+.gifts img {
+  height: 9.5rem;
+}
+
+.gifts p:last-child {   /* To even out the bottom and top margins of this section. */
+  margin-bottom: 0;
+}
+
+
+/* =============================
+
+        FOOTER STYLES
+
+=============================*/
+
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
