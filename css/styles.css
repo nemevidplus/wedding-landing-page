@@ -12,6 +12,10 @@ body {
   font-size: 1.125rem;
   line-height: 1.5;
   color: #444349;
+   margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+ 
 }
 
 .locations,
